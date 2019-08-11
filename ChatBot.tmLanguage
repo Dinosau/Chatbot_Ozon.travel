@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plist version="1.0">
+    <dict>
+        <key>patterns</key>
+        <array>
+            <dict>
+                <key>name</key>
+                <string>keyword</string> <!-- Имя стиля --> 
+                <key>match</key>
+                <string>^\s*(patterns:|scripts:|tagConverter:|postProcess:|theme:|state:)</string> <!-- Регулярное выражение к-рое надо выделить (номера из черного списка) --> 
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>storage.type</string> <!-- Имя стиля --> 
+                <key>match</key>
+                <string>^\s*(q!:|q:|s:|qa:|event:)</string> <!-- Регулярное выражение к-рое надо выделить (номера из черного списка) --> 
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>variable.parameter</string> <!-- Имя стиля --> 
+                <key>match</key>
+                <string>^\s*(a:|invoke:|buttons:|inlineButtons:|random:|else:|extend:|feedback|go!:|go:|if:|option:|script:|stepBack|timeout:)</string> <!-- Регулярное выражение к-рое надо выделить (номера из черного списка) --> 
+            </dict>
+
+            <dict>
+                <key>name</key>
+                <string>entity.name.class</string> <!-- Имя стиля --> 
+                <key>match</key>
+                <string>\$[A-Za-z0-9]+(\:\:[A-Za-z0-9+])?</string>
+            </dict>
+
+            <dict>
+                <key>name</key>
+                <string>constant.character</string> <!-- Имя стиля --> 
+                <key>match</key>
+                <string>{{.+?}}</string>
+            </dict>
+
+            <dict>
+                <key>name</key>
+                <string>entity.name.class</string> <!-- Имя стиля --> 
+                <key>match</key>
+                <string>,\s*[A-Za-z]+\s*=</string>
+            </dict>
+
+            <dict>
+                <key>name</key>
+                <string>comment</string> <!-- Имя стиля --> 
+                <key>match</key>
+                <string>\#.*</string>
+            </dict>
+
+        <!--<dict>
+                <key>name</key>
+                <string>yellow</string> <!- - Имя стиля - - > 
+                <key>match</key>
+                <string>(\d+{1,20})\.(\d+{1,20})</string>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>green</string> <!- - Имя стиля - - > 
+                <key>match</key>
+                <string>\$([a-z]+?)</string>
+            </dict> -->
+
+        </array>
+        <key>name</key>
+        <string>ChatBot</string> 
+        <key>scopeName</key>
+        <string>ChatBot</string>
+        <key>fileTypes</key>
+        <array>
+            <string>sc</string> <!-- К этому расширению файла будет автоматически применяться данный синтаксис -->
+        </array>
+    </dict>
+</plist>
